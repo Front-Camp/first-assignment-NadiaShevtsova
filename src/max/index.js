@@ -7,7 +7,12 @@
 * max([-1, 0]);   // 0
 */
 const max = arr => {
-  /* your logic here...*/
+  let variable=arr[0];
+  for (let i = 0; i < arr.length; i++) {
+    if(arr[i]>=variable) {
+      variable = arr[i];
+    }
+  }
+  return variable;
 };
-
 export default max;

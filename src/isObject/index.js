@@ -8,7 +8,12 @@
  * isObject(null); // false
  */
 const isObject = data => {
-  /* your logic here...*/
+  // let a= typeof data;
+  if (typeof data === Object){
+    return true;
+  }else {
+    return false;
+  }
 };
 
 export default isObject;
